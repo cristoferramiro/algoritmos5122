@@ -19,7 +19,50 @@ Definir resultado, num, anterior, cantidad Como Entero
 
 Aqui ingresa tu codigo piramide
 
+Algoritmo PIRAMIDE
+	Definir n Como Entero;
+	Definir c Como Caracter;
+	LeerPositivo(n);
+	LeerUnCaracter(c);
+	EspacioLinea(n,c);
+	Caracterlinea(n,c);
+	PiramideBase(n,c);
+	
+FinAlgoritmo
 
+SubProceso LeerPositivo(n Por Referencia)
+	Repetir
+		Escribir sin Saltar "ingresa el numero de pisos que deseas tu piramide:";
+		Leer n;
+	Hasta Que n>0
+FinSubProceso
+SubProceso LeerUnCaracter(c Por Referencia)
+	Repetir
+		Escribir sin Saltar "ingresar un carcater para tu piramide:";
+		Leer c;
+	Hasta Que Longitud(c)=1
+FinSubProceso
+
+SubProceso EspacioLinea(n,c)
+	Definir i Como Entero
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Escribir Sin Saltar c;
+	FinPara
+FinSubProceso
+SubProceso Caracterlinea(n,c)
+	Definir i Como Entero
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Escribir Sin Saltar c," ";
+	FinPara
+	Escribir " ";
+FinSubProceso
+SubProceso PiramideBase(n,c)
+	definir i Como Entero
+	Para i<-1 Hasta n con Paso 1 Hacer
+		EspacioLinea(n-i," ");
+		caracterLinea(i,c);
+	FinPara
+FinSubProceso
 
 
 
