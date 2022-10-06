@@ -1,7 +1,7 @@
 Aqui ingresa tu codigo fibonaci
 
 Definir resultado, num, anterior, cantidad Como Entero
-	Escribir " ingrese sucecion hasta"
+	Escribir " ingrese sucesion hasta"
 	Leer cantidad
 	resultado = 0
 	num = 0
