@@ -20,50 +20,22 @@ Definir resultado, num, anterior, cantidad Como Entero
 Aqui ingresa tu codigo piramide
 
 Algoritmo PIRAMIDE
-	Definir n Como Entero;
-	Definir c Como Caracter;
-	LeerPositivo(n);
-	LeerUnCaracter(c);
-	EspacioLinea(n,c);
-	Caracterlinea(n,c);
-	PiramideBase(n,c);
-	
+	Definir  i, Base, espacio, Num_Pis Como Entero;
+	Escribir "Ingresa el numero de pisos que deseas para tu piramide: ";
+	Leer Num_Pis;
+	Escribir "Ingresa un simbolo para que se cree tu piramide: ";
+	Leer Sim;
+	Para i <-Num_Pis Hasta 1 Con paso -1 Hacer
+		Para  Base<-1 Hasta i Con Paso 1 Hacer
+			Escribir  " " Sin Saltar;
+		FinPara;
+	    Para espacio <- i Hasta Num_Pis con paso 1 Hacer
+			Escribir Sin Saltar " ", Sim;
+		FinPara;
+		Escribir "";
+	FinPara;
 FinAlgoritmo
-
-SubProceso LeerPositivo(n Por Referencia)
-	Repetir
-		Escribir sin Saltar "ingresa el numero de pisos que deseas tu piramide:";
-		Leer n;
-	Hasta Que n>0
-FinSubProceso
-SubProceso LeerUnCaracter(c Por Referencia)
-	Repetir
-		Escribir sin Saltar "ingresar un carcater para tu piramide:";
-		Leer c;
-	Hasta Que Longitud(c)=1
-FinSubProceso
-
-SubProceso EspacioLinea(n,c)
-	Definir i Como Entero
-	Para i<-1 Hasta n Con Paso 1 Hacer
-		Escribir Sin Saltar c;
-	FinPara
-FinSubProceso
-SubProceso Caracterlinea(n,c)
-	Definir i Como Entero
-	Para i<-1 Hasta n Con Paso 1 Hacer
-		Escribir Sin Saltar c," ";
-	FinPara
-	Escribir " ";
-FinSubProceso
-SubProceso PiramideBase(n,c)
-	definir i Como Entero
-	Para i<-1 Hasta n con Paso 1 Hacer
-		EspacioLinea(n-i," ");
-		caracterLinea(i,c);
-	FinPara
-FinSubProceso
-
+	
 
 
 Aqui ingresa tu codigo calculadora
